@@ -16,15 +16,21 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "flux-ui.helloWorld",
-      "title": "Hello World"
-    }],
+    "commands": [
+      {
+        "command": "flux-ui.helloWorld",
+        "title": "Hello World"
+      }
+    ],
     "languages": [
       {
         "id": "blade",
-        "extensions": [".blade.php"],
-        "aliases": ["Blade"]
+        "extensions": [
+          ".blade.php"
+        ],
+        "aliases": [
+          "Blade"
+        ]
       }
     ],
     "grammars": [],
@@ -38,15 +44,21 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "update-components": "node src/get-components.js",
+    "update": "npm run update-components"
   },
   "devDependencies": {
-    "@types/vscode": "^1.92.0",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
+    "@types/vscode": "^1.92.0",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }

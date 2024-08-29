@@ -22,15 +22,15 @@ class FluxCompletionProvider {
 
         // Map each component object to a CompletionItem
         return fluxComponents.map((component) => {
-            const item = new vscode.CompletionItem(component.name, vscode.CompletionItemKind.Snippet)
+            const item = new vscode.CompletionItem(`flux:${component.name}`, vscode.CompletionItemKind.Snippet)
 
             if (component.selfClosing) {
-                item.insertText = new vscode.SnippetString(`${component.name} $0/>`)
+                item.insertText = new vscode.SnippetString(`flux:${component.name} $0/>`)
             } else {
-                item.insertText = new vscode.SnippetString(`${component.name}>$0</${component.name}>`)
+                item.insertText = new vscode.SnippetString(`flux:${component.name}>$0</flux:${component.name}>`)
             }
 
-            item.documentation = new vscode.MarkdownString(`Inserts a Flux ${component.name.split(':')[1]} component.`)
+            item.documentation = new vscode.MarkdownString(`Inserts a Flux ${component.name} component.`)
             return item
         })
     }
