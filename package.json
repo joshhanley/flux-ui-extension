@@ -4,18 +4,36 @@
   "description": "Livewire Flux UI components support",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.86.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:php",
+    "onLanguage:blade"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
       "command": "flux-ui.helloWorld",
       "title": "Hello World"
-    }]
+    }],
+    "languages": [
+      {
+        "id": "blade",
+        "extensions": [".blade.php"],
+        "aliases": ["Blade"]
+      }
+    ],
+    "grammars": [],
+    "snippets": [],
+    "configuration": {
+      "blade": {
+        "suggestions": true
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",

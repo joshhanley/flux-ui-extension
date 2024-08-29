@@ -1,0 +1,14 @@
+[
+    {
+        "name": "flux:button",
+        "selfClosing": false
+    },
+    {
+        "name": "flux:input",
+        "selfClosing": true
+    },
+    {
+        "name": "flux:modal",
+        "selfClosing": false
+    }
+]
