@@ -1,5 +1,9 @@
 [
   {
+    "name": "accordion.content",
+    "selfClosing": false
+  },
+  {
     "name": "accordion.heading",
     "selfClosing": false
   },
@@ -13,10 +17,6 @@
   },
   {
     "name": "accordion.item",
-    "selfClosing": false
-  },
-  {
-    "name": "accordion.panel",
     "selfClosing": false
   },
   {
@@ -72,10 +72,6 @@
     "selfClosing": false
   },
   {
-    "name": "button.with-tooltip",
-    "selfClosing": false
-  },
-  {
     "name": "button-or-div",
     "selfClosing": false
   },
@@ -100,10 +96,6 @@
     "selfClosing": false
   },
   {
-    "name": "card.sidebar",
-    "selfClosing": false
-  },
-  {
     "name": "cell",
     "selfClosing": false
   },
@@ -121,6 +113,10 @@
   },
   {
     "name": "columns",
+    "selfClosing": false
+  },
+  {
+    "name": "command.empty",
     "selfClosing": false
   },
   {
@@ -156,10 +152,6 @@
     "selfClosing": false
   },
   {
-    "name": "dropdown.button",
-    "selfClosing": false
-  },
-  {
     "name": "dropdown",
     "selfClosing": false
   },
@@ -177,10 +169,6 @@
   },
   {
     "name": "footer",
-    "selfClosing": false
-  },
-  {
-    "name": "form",
     "selfClosing": false
   },
   {
@@ -1464,7 +1452,15 @@
     "selfClosing": false
   },
   {
-    "name": "input.button",
+    "name": "input.clearable",
+    "selfClosing": false
+  },
+  {
+    "name": "input.copyable",
+    "selfClosing": false
+  },
+  {
+    "name": "input.expandable",
     "selfClosing": false
   },
   {
@@ -1472,15 +1468,19 @@
     "selfClosing": false
   },
   {
+    "name": "input.group.prefix",
+    "selfClosing": false
+  },
+  {
+    "name": "input.group.suffix",
+    "selfClosing": false
+  },
+  {
     "name": "input",
     "selfClosing": false
   },
   {
-    "name": "input.prefix",
-    "selfClosing": false
-  },
-  {
-    "name": "input.suffix",
+    "name": "input.viewable",
     "selfClosing": false
   },
   {
@@ -1588,6 +1588,14 @@
     "selfClosing": false
   },
   {
+    "name": "option",
+    "selfClosing": false
+  },
+  {
+    "name": "options",
+    "selfClosing": false
+  },
+  {
     "name": "page",
     "selfClosing": false
   },
@@ -1616,11 +1624,7 @@
     "selfClosing": false
   },
   {
-    "name": "select.button",
-    "selfClosing": false
-  },
-  {
-    "name": "select.combobox",
+    "name": "select.custom",
     "selfClosing": false
   },
   {
@@ -1632,31 +1636,7 @@
     "selfClosing": false
   },
   {
-    "name": "select.input",
-    "selfClosing": false
-  },
-  {
-    "name": "select.listbox",
-    "selfClosing": false
-  },
-  {
     "name": "select.native",
-    "selfClosing": false
-  },
-  {
-    "name": "select.option",
-    "selfClosing": false
-  },
-  {
-    "name": "select.options",
-    "selfClosing": false
-  },
-  {
-    "name": "select.pillbox",
-    "selfClosing": false
-  },
-  {
-    "name": "select.pills",
     "selfClosing": false
   },
   {
@@ -1668,7 +1648,7 @@
     "selfClosing": false
   },
   {
-    "name": "select.searchable",
+    "name": "select.trigger",
     "selfClosing": false
   },
   {
@@ -1740,11 +1720,11 @@
     "selfClosing": false
   },
   {
-    "name": "tooltip",
+    "name": "tooltip.content",
     "selfClosing": false
   },
   {
-    "name": "tooltip.overlay",
+    "name": "tooltip",
     "selfClosing": false
   },
   {
@@ -1761,6 +1741,10 @@
   },
   {
     "name": "with-reversed-inline-field",
+    "selfClosing": false
+  },
+  {
+    "name": "with-tooltip",
     "selfClosing": false
   }
 ]
