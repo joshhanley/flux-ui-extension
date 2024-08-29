@@ -3,8 +3,13 @@
   "displayName": "Flux UI",
   "description": "Livewire Flux UI components support",
   "version": "0.0.1",
+  "publisher": "joshhanley",
   "engines": {
     "vscode": "^1.86.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshhanley/flux-ui-extension.git"
   },
   "categories": [
     "Other"
@@ -14,7 +19,7 @@
     "onLanguage:php",
     "onLanguage:blade"
   ],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
