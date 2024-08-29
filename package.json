@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/joshhanley/flux-ui-extension.git"
   },
-  "icon": "icon.png",
+  "icon": "images/icon.png",
   "categories": [
     "Other"
   ],
