@@ -2,7 +2,7 @@
   "name": "flux-ui",
   "displayName": "Flux UI",
   "description": "Livewire Flux UI components support",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "joshhanley",
   "engines": {
     "vscode": "^1.86.0"
