@@ -12,7 +12,16 @@ const FluxCompletionProvider = require('./flux-completion-provider')
 function activate(context) {
     console.log('Livewire Flux UI extension activated!')
 
-    const provider = vscode.languages.registerCompletionItemProvider('blade', new FluxCompletionProvider(), '<')
+    const provider = vscode.languages.registerCompletionItemProvider(
+        'blade',
+        new FluxCompletionProvider(),
+        '<',
+        'f',
+        'l',
+        'u',
+        'x',
+        ':', // Add characters to trigger the dropdown for "<flux:"
+    )
     context.subscriptions.push(provider)
 }
 
