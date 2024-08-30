@@ -24,7 +24,7 @@ class FluxCompletionProvider {
                 const item = new vscode.CompletionItem(`flux:${component.name}`, vscode.CompletionItemKind.Snippet)
 
                 if (component.selfClosing) {
-                    item.insertText = new vscode.SnippetString(`flux:${component.name} $0/>`)
+                    item.insertText = new vscode.SnippetString(`flux:${component.name}/>$0`)
                 } else {
                     item.insertText = new vscode.SnippetString(`flux:${component.name}>$0</flux:${component.name}>`)
                 }
@@ -32,6 +32,39 @@ class FluxCompletionProvider {
                 item.documentation = new vscode.MarkdownString(`Inserts a Flux ${component.name} component.`)
                 return item
             })
+        }
+
+        // Handle prop completion when typing inside a component tag
+        const tagMatch = linePrefix.match(/<flux:([a-z0-9\.\-]+)\s+[^>]*$/)
+
+        if (tagMatch) {
+            const fluxComponents = loadFluxComponents() // Load components from JSON file
+            const componentName = tagMatch[1]
+
+            // Find the corresponding component and its props
+            const component = fluxComponents.find((c) => c.name === componentName)
+            if (component && component.props) {
+                return component.props.map((prop) => {
+                    const item = new vscode.CompletionItem(prop.name, vscode.CompletionItemKind.Property)
+
+                    if (prop.default === 'true' || prop.default === 'false') {
+                        if (prop.type === 'boolean' && prop.default === 'false') {
+                            item.insertText = new vscode.SnippetString(`${prop.name}`)
+                        } else {
+                            item.insertText = new vscode.SnippetString(`:${prop.name}="\${1:${prop.default}}"`)
+                        }
+                    } else if (prop.default === "Value from 'wire:model'" || prop.default === 'null') {
+                        item.insertText = new vscode.SnippetString(`${prop.name}="$0"`)
+                    } else {
+                        item.insertText = new vscode.SnippetString(`${prop.name}="\${1:${prop.default.slice(1, -1)}}"`)
+                    }
+
+                    const documentation = `**Name**: ${prop.name}  \n**Default**: ${prop.default}  \n**Type**: ${prop.type}`
+
+                    item.documentation = new vscode.MarkdownString(documentation)
+                    return item
+                })
+            }
         }
 
         return undefined

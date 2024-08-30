@@ -6,10 +6,13 @@ This package is a VSCode extension to add suggestions for [Flux UI components](h
 
 In any blade file, start a HTML tag `<` and you should see a list of Flux components suggested.
 
+![screenshot of component suggestions](https://github.com/joshhanley/flux-ui-extension/blob/main/images/compoenents-screenshot.png?raw=true)
 
-![screenshot of suggestions](https://github.com/joshhanley/flux-ui-extension/blob/main/images/screenshot.png?raw=true)
+Once a Flux component has been added, you can also see what props are available.
 
-## Updates
+![screenshot of prop suggestions](https://github.com/joshhanley/flux-ui-extension/blob/main/images/compoenents-screenshot.png?raw=true)
+
+## Contributions
 
 This extension needs to be manually updated if any Flux components are added or removed.
 

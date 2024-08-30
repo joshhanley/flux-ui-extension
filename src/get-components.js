@@ -38,6 +38,8 @@ function getFilesRecursively(directory, localPath = null) {
                 return
             }
 
+            let props = getProps(filePath)
+
             let componentName = file.replace(/\.blade\.php$/, '')
 
             let fullComponentName = componentName === 'index' ? localPath : `${localPath ? `${localPath}.` : ''}${componentName}`
@@ -45,11 +47,42 @@ function getFilesRecursively(directory, localPath = null) {
             results.push({
                 name: fullComponentName,
                 selfClosing: false,
+                props,
             })
         }
     })
 
     return results
+}
+
+function getProps(filePath) {
+    const data = fs.readFileSync(filePath, 'utf8')
+    const matches = data.match(/@props\(\[\s*((.|\n)*?)\s*\]\)/)
+
+    if (!matches) {
+        return []
+    }
+
+    const props = matches[1]
+        .replace(/,\s*$/, '')
+        .split(',')
+        .map((prop) => {
+            let parts = prop.trim().split('=>')
+            let name = parts[0].trim().slice(1, -1)
+            let defaultValue = parts[1] ? parts[1].trim() : null
+            if (defaultValue) {
+                if (defaultValue.includes('wire:model')) defaultValue = "Value from 'wire:model'"
+            }
+            let type = defaultValue === 'true' || defaultValue === 'false' ? 'boolean' : 'string'
+
+            return {
+                name,
+                type,
+                default: defaultValue,
+            }
+        })
+
+    return props
 }
 
 const files = getFilesRecursively(fluxDirectory + '/stubs/resources/views/flux')

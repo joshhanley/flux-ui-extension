@@ -1,1750 +1,5242 @@
 [
   {
     "name": "accordion.content",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "transition",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
   },
   {
     "name": "accordion.heading",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "disabled",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "accordion.icon",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "pointing",
+        "type": "string",
+        "default": "'down'"
+      },
+      {
+        "name": "disabled",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "accordion",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "accordion.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "transition",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "aside",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "sticky",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "autocomplete",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "autocomplete.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "autocomplete.items",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "avatar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "src",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "'base'"
+      }
+    ]
   },
   {
     "name": "badge.close",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "'x-mark'"
+      }
+    ]
   },
   {
     "name": "badge",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "default": "'zinc'"
+      },
+      {
+        "name": "inset",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "body",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "brand",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "logo",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "'/'"
+      }
+    ]
   },
   {
     "name": "breadcrumbs",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "breadcrumbs.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "divider",
+        "type": "string",
+        "default": "'chevron-right'"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "button.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "button",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconLeading",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'button'"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "'base'"
+      },
+      {
+        "name": "square",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "inset",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "button-or-div",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "as",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "button-or-link",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'button'"
+      },
+      {
+        "name": "current",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "card.body",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "card.footer",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "card.header",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "actions",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "card",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "cell",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "align",
+        "type": "string",
+        "default": "'left'"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "checkbox.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "checkbox",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
   },
   {
     "name": "column",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "direction",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sortable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "sorted",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "align",
+        "type": "string",
+        "default": "'left'"
+      }
+    ]
   },
   {
     "name": "columns",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "command.empty",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "command",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "command.input",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "closable",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "command.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "command.items",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "container",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "context",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "position",
+        "type": "string",
+        "default": "'bottom end'"
+      }
+    ]
   },
   {
     "name": "description",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "div-or-link",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "href",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "dropdown",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "position",
+        "type": "string",
+        "default": "'bottom start'"
+      }
+    ]
   },
   {
     "name": "error",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "field",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'block'"
+      }
+    ]
   },
   {
     "name": "fieldset",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "legend",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "footer",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "header",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "sticky",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "heading",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "'base'"
+      },
+      {
+        "name": "level",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "icon.academic-cap",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.adjustments-horizontal",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.adjustments-vertical",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.archive-box-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.archive-box-x-mark",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.archive-box",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-on-square-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-on-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down-tray",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-left-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-left-end-on-rectangle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-left-start-on-rectangle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-long-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-long-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-long-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-long-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-path-rounded-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-path",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-right-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-right-end-on-rectangle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-right-start-on-rectangle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-top-right-on-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-trending-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-trending-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-down-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-down-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-left-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-left-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-right-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-right-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-up-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-turn-up-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-on-square-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-on-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up-tray",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-uturn-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-uturn-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-uturn-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrow-uturn-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrows-pointing-in",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrows-pointing-out",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrows-right-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.arrows-up-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.at-symbol",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.backspace",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.backward",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.banknotes",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-2",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-3-bottom-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-3-bottom-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-3-center-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-3",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-4",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bars-arrow-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.battery-0",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.battery-100",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.battery-50",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.beaker",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bell-alert",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bell-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bell-snooze",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bell",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bold",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bolt-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bolt",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.book-open",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bookmark-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bookmark-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bookmark",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.briefcase",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.bug-ant",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.building-library",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.building-office-2",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.building-office",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.building-storefront",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cake",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.calculator",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.calendar-date-range",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.calendar-days",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.calendar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.camera",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chart-bar-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chart-bar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chart-pie",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-bottom-center-text",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-bottom-center",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-left-ellipsis",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-left-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-oval-left-ellipsis",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chat-bubble-oval-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.check-badge",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.check-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.check",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-double-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-double-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-double-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-double-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-up-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.chevron-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.circle-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.clipboard-document-check",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.clipboard-document-list",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.clipboard-document",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.clipboard",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.clock",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cloud-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cloud-arrow-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cloud",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.code-bracket-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.code-bracket",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cog-6-tooth",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cog-8-tooth",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cog",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.command-line",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.computer-desktop",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cpu-chip",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.credit-card",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cube-transparent",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cube",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-bangladeshi",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-dollar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-euro",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-pound",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-rupee",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.currency-yen",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cursor-arrow-rays",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.cursor-arrow-ripple",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.device-phone-mobile",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.device-tablet",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.divide",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-arrow-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-chart-bar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-check",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-bangladeshi",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-dollar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-euro",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-pound",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-rupee",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-currency-yen",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-duplicate",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-magnifying-glass",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-minus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document-text",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.document",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.ellipsis-horizontal-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.ellipsis-horizontal",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.ellipsis-vertical",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.envelope-open",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.envelope",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.equals",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.exclamation-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.exclamation-triangle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.eye-dropper",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.eye-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.eye",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.face-frown",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.face-smile",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.film",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.finger-print",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.fire",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.flag",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.folder-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.folder-minus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.folder-open",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.folder-plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.folder",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.forward",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.funnel",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.gif",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.gift-top",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.gift",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.globe-alt",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.globe-americas",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.globe-asia-australia",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.globe-europe-africa",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.h1",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.h2",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.h3",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.hand-raised",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.hand-thumb-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.hand-thumb-up",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.hashtag",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.heart",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.home-modern",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.home",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.identification",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.inbox-arrow-down",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.inbox-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.inbox",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "icon.information-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.italic",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.key",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.language",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.lifebuoy",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.light-bulb",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.link-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.link",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.list-bullet",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.loading",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.lock-closed",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.lock-open",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.magnifying-glass-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.magnifying-glass-minus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.magnifying-glass-plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.magnifying-glass",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.map-pin",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.map",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.megaphone",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.microphone",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.minus-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.minus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.moon",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.musical-note",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.newspaper",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.no-symbol",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.numbered-list",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.paint-brush",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.paper-airplane",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.paper-clip",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.pause-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.pause",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.pencil-square",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.pencil",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.percent-badge",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.phone-arrow-down-left",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.phone-arrow-up-right",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.phone-x-mark",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.phone",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.photo",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.play-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.play-pause",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.play",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.plus-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.power",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.presentation-chart-bar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.presentation-chart-line",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.printer",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.puzzle-piece",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.qr-code",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.question-mark-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.queue-list",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.radio",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.receipt-percent",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.receipt-refund",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.rectangle-group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.rectangle-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.rocket-launch",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.rss",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.scale",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.scissors",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.server-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.server",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.share",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.shield-check",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.shield-exclamation",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.shopping-bag",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.shopping-cart",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.signal-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.signal",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.sparkles",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.speaker-wave",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.speaker-x-mark",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.square-2-stack",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.square-3-stack-3d",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.squares-2x2",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.squares-plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.star",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.stop-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.stop",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.strikethrough",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.sun",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.swatch",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.table-cells",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.tag",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.ticket",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.trash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.trophy",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.truck",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.tv",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.underline",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.user-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.user-group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.user-minus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.user-plus",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.user",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.users",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.variable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.video-camera-slash",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.video-camera",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.view-columns",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.viewfinder-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.wallet",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.wifi",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.window",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.wrench-screwdriver",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.wrench",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.x-circle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "icon.x-mark",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
   },
   {
     "name": "input.clearable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input.copyable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input.expandable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input.group.prefix",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input.group.suffix",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "input",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      },
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconLeading",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "expandable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "clearable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "copyable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "viewable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'text'"
+      },
+      {
+        "name": "mask",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "as",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "input.viewable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "label",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "aside",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "legend",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "link",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "external",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "menu.checkbox",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "indent",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "suffix",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "menu.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "menu.heading",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "menu",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "menu.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "suffix",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "menu.radio-group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "menu.radio",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "indent",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "suffix",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "menu.separator",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "menu.submenu",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "''"
+      }
+    ]
   },
   {
     "name": "modal.body",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "modal.close",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "modal.footer",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "modal.header",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "modal",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "closable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "modal.trigger",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "shortcut",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "modal",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navbar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "scrollable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navbar.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "'outline'"
+      },
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconDot",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navlist.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "expandable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navlist",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navlist.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "'outline'"
+      },
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconDot",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navmenu",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "navmenu.item",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "indent",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "suffix",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "navmenu.separator",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "option",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "custom",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "options",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "searchable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "search",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "empty",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "page",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "pagination",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "paginator",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "profile",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "avatar",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "radio.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
   },
   {
     "name": "radio",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
   },
   {
     "name": "row",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "key",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "rows",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "select.custom",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "searchable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "select.empty",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "select",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "custom",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "select.native",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "select.pills",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
   },
   {
     "name": "select.search",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "closable",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
   },
   {
     "name": "select.trigger",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "separator",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "orientation",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "vertical",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "faint",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "sidebar.backdrop",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "sidebar",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "stashable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sticky",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "sidebar.toggle",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "spacer",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "subheading",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "switch",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
   },
   {
     "name": "tab.group",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "tab",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "tab.panel",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "table.sortable",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "direction",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sorted",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
   },
   {
     "name": "table",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "paginate",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "tabs",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "text",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "textarea",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "resize",
+        "type": "string",
+        "default": "'vertical'"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "rows",
+        "type": "string",
+        "default": "4"
+      }
+    ]
   },
   {
     "name": "toast",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "toast.trigger",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "undo",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "action",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "actionLabel",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "duration",
+        "type": "string",
+        "default": "5000"
+      }
+    ]
   },
   {
     "name": "tooltip.content",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "tooltip",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "position",
+        "type": "string",
+        "default": "'top'"
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "with-container",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "container",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "with-field",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "descriptionTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "with-inline-field",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "with-reversed-inline-field",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "with-tooltip",
-    "selfClosing": false
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "tooltipPosition",
+        "type": "string",
+        "default": "'top'"
+      },
+      {
+        "name": "tooltipKbd",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "tooltip",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   }
 ]
