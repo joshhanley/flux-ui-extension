@@ -13,7 +13,7 @@ class FluxCompletionProvider {
     provideCompletionItems(document, position, token, context) {
         const linePrefix = document.lineAt(position).text.substr(0, position.character)
 
-        const prefixMatch = linePrefix.match(/<(?:f(?:l(?:u(?:x(?::)?)?)?)?)?$/)
+        const prefixMatch = linePrefix.match(/<(?:f(?:l(?:u(?:x)?)?)?)?$/)
 
         // Handle component name completion when the line ends with '<'
         if (prefixMatch) {

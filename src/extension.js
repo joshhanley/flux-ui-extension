@@ -19,8 +19,7 @@ function activate(context) {
         'f',
         'l',
         'u',
-        'x',
-        ':', // Add characters to trigger the dropdown for "<flux:"
+        'x', // Add characters to trigger the dropdown for "<flux"
         ' ' // Add a space to trigger the dropdown for props inside a component tag
     )
     context.subscriptions.push(provider)
