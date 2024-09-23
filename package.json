@@ -2,7 +2,7 @@
   "name": "flux-ui",
   "displayName": "Flux UI",
   "description": "Livewire Flux UI components support",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publisher": "joshhanley",
   "engines": {
     "vscode": "^1.86.0"
@@ -52,7 +52,8 @@
     "pretest": "npm run lint",
     "test": "vscode-test",
     "update-components": "node src/get-components.js",
-    "update": "npm run update-components"
+    "update": "npm run update-components",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",

@@ -3,8 +3,10 @@ const path = require('path')
 
 let outputFile = 'src/components.json'
 let fluxDirectoryConfig = 'flux-directory.json'
+let fluxProDirectoryConfig = 'flux-pro-directory.json'
 
 let fluxDirectory = process.argv[2]
+let fluxProDirectory = process.argv[3]
 
 if (fluxDirectory) {
     fs.writeFileSync(fluxDirectoryConfig, JSON.stringify(fluxDirectory))
@@ -17,7 +19,16 @@ if (fluxDirectory) {
     }
 }
 
-console.log(`Scanning Flux directory: ${fluxDirectory}`)
+if (fluxProDirectory) {
+    fs.writeFileSync(fluxProDirectoryConfig, JSON.stringify(fluxProDirectory))
+} else {
+    if (fs.existsSync(fluxProDirectoryConfig)) {
+        fluxProDirectory = JSON.parse(fs.readFileSync(fluxProDirectoryConfig))
+    } else {
+        console.warn('WARN: No Flux directory argument provided or previously stored.')
+        return
+    }
+}
 
 function isBladeFile(filePath) {
     return path.extname(filePath) === '.php' && filePath.endsWith('.blade.php')
@@ -85,8 +96,14 @@ function getProps(filePath) {
     return props
 }
 
+console.log(`Scanning Flux directory: ${fluxDirectory}`)
 const files = getFilesRecursively(fluxDirectory + '/stubs/resources/views/flux')
 
-fs.writeFileSync(outputFile, JSON.stringify(files, null, 2))
+console.log(`Scanning Flux Pro directory: ${fluxProDirectory}`)
+const files2 = getFilesRecursively(fluxDirectory + '/stubs/resources/views/flux')
+
+const allFiles = files.concat(files2)
+
+fs.writeFileSync(outputFile, JSON.stringify(allFiles, null, 2))
 
 console.log(`Components have been updated in: ${outputFile}`)

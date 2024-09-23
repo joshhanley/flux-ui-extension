@@ -2,3 +2,4 @@ node_modules
 .vscode-test/
 *.vsix
 flux-directory.json
+flux-pro-directory.json
