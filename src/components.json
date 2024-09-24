@@ -1,8 +1,224 @@
 [
   {
-    "name": "button.group",
+    "name": "accordion",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "accordion.content",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "transition",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
+  },
+  {
+    "name": "accordion.heading",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "disabled",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "accordion.icon",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "pointing",
+        "type": "string",
+        "default": "'down'"
+      },
+      {
+        "name": "disabled",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "accordion.item",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "transition",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "heading",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "aside",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "sticky",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "autocomplete",
     "selfClosing": false,
     "props": []
+  },
+  {
+    "name": "autocomplete.item",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "autocomplete.items",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "avatar",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "src",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "'base'"
+      }
+    ]
+  },
+  {
+    "name": "badge",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "default": "'zinc'"
+      },
+      {
+        "name": "inset",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "badge.close",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "'x-mark'"
+      }
+    ]
+  },
+  {
+    "name": "brand",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "logo",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "'/'"
+      }
+    ]
+  },
+  {
+    "name": "breadcrumbs",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "breadcrumbs.item",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "separator",
+        "type": "string",
+        "default": "'chevron-right'"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "null"
+      }
+    ]
   },
   {
     "name": "button",
@@ -61,6 +277,17 @@
     ]
   },
   {
+    "name": "button-or-div",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "as",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
     "name": "button-or-link",
     "selfClosing": false,
     "props": [
@@ -82,6 +309,175 @@
     ]
   },
   {
+    "name": "button.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "card",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "cell",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "align",
+        "type": "string",
+        "default": "'start'"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "checkbox",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
+  },
+  {
+    "name": "checkbox.all",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "checkbox.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "column",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "direction",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sortable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "sorted",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "align",
+        "type": "string",
+        "default": "'left'"
+      }
+    ]
+  },
+  {
+    "name": "columns",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "command",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "command.empty",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "command.input",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "closable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "'magnifying-glass'"
+      }
+    ]
+  },
+  {
+    "name": "command.item",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "command.items",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "container",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "context",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "position",
+        "type": "string",
+        "default": "'bottom end'"
+      }
+    ]
+  },
+  {
+    "name": "description",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "div-or-link",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "href",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
     "name": "dropdown",
     "selfClosing": false,
     "props": [
@@ -94,6 +490,102 @@
         "name": "align",
         "type": "string",
         "default": "'start'"
+      }
+    ]
+  },
+  {
+    "name": "error",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "field",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'block'"
+      }
+    ]
+  },
+  {
+    "name": "fieldset",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "legend",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "footer",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "header",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "sticky",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "container",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "heading",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "'base'"
+      },
+      {
+        "name": "level",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "icon",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
       }
     ]
   },
@@ -131,6 +623,17 @@
     ]
   },
   {
+    "name": "icon.archive-box",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.archive-box-arrow-down",
     "selfClosing": false,
     "props": [
@@ -153,7 +656,7 @@
     ]
   },
   {
-    "name": "icon.archive-box",
+    "name": "icon.arrow-down",
     "selfClosing": false,
     "props": [
       {
@@ -186,7 +689,7 @@
     ]
   },
   {
-    "name": "icon.arrow-down-on-square-stack",
+    "name": "icon.arrow-down-on-square",
     "selfClosing": false,
     "props": [
       {
@@ -197,7 +700,7 @@
     ]
   },
   {
-    "name": "icon.arrow-down-on-square",
+    "name": "icon.arrow-down-on-square-stack",
     "selfClosing": false,
     "props": [
       {
@@ -230,7 +733,7 @@
     ]
   },
   {
-    "name": "icon.arrow-down",
+    "name": "icon.arrow-left",
     "selfClosing": false,
     "props": [
       {
@@ -264,17 +767,6 @@
   },
   {
     "name": "icon.arrow-left-start-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-left",
     "selfClosing": false,
     "props": [
       {
@@ -329,6 +821,17 @@
     ]
   },
   {
+    "name": "icon.arrow-path",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.arrow-path-rounded-square",
     "selfClosing": false,
     "props": [
@@ -340,7 +843,7 @@
     ]
   },
   {
-    "name": "icon.arrow-path",
+    "name": "icon.arrow-right",
     "selfClosing": false,
     "props": [
       {
@@ -374,17 +877,6 @@
   },
   {
     "name": "icon.arrow-right-start-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-right",
     "selfClosing": false,
     "props": [
       {
@@ -516,6 +1008,17 @@
     ]
   },
   {
+    "name": "icon.arrow-up",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.arrow-up-circle",
     "selfClosing": false,
     "props": [
@@ -538,7 +1041,7 @@
     ]
   },
   {
-    "name": "icon.arrow-up-on-square-stack",
+    "name": "icon.arrow-up-on-square",
     "selfClosing": false,
     "props": [
       {
@@ -549,7 +1052,7 @@
     ]
   },
   {
-    "name": "icon.arrow-up-on-square",
+    "name": "icon.arrow-up-on-square-stack",
     "selfClosing": false,
     "props": [
       {
@@ -572,17 +1075,6 @@
   },
   {
     "name": "icon.arrow-up-tray",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up",
     "selfClosing": false,
     "props": [
       {
@@ -736,6 +1228,17 @@
     ]
   },
   {
+    "name": "icon.bars-3",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.bars-3-bottom-left",
     "selfClosing": false,
     "props": [
@@ -759,17 +1262,6 @@
   },
   {
     "name": "icon.bars-3-center-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-3",
     "selfClosing": false,
     "props": [
       {
@@ -857,6 +1349,17 @@
     ]
   },
   {
+    "name": "icon.bell",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.bell-alert",
     "selfClosing": false,
     "props": [
@@ -890,29 +1393,7 @@
     ]
   },
   {
-    "name": "icon.bell",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.bold",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bolt-slash",
     "selfClosing": false,
     "props": [
       {
@@ -934,7 +1415,29 @@
     ]
   },
   {
+    "name": "icon.bolt-slash",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.book-open",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.bookmark",
     "selfClosing": false,
     "props": [
       {
@@ -957,17 +1460,6 @@
   },
   {
     "name": "icon.bookmark-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bookmark",
     "selfClosing": false,
     "props": [
       {
@@ -1011,7 +1503,7 @@
     ]
   },
   {
-    "name": "icon.building-office-2",
+    "name": "icon.building-office",
     "selfClosing": false,
     "props": [
       {
@@ -1022,7 +1514,7 @@
     ]
   },
   {
-    "name": "icon.building-office",
+    "name": "icon.building-office-2",
     "selfClosing": false,
     "props": [
       {
@@ -1066,6 +1558,17 @@
     ]
   },
   {
+    "name": "icon.calendar",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.calendar-date-range",
     "selfClosing": false,
     "props": [
@@ -1088,29 +1591,7 @@
     ]
   },
   {
-    "name": "icon.calendar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.camera",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chart-bar-square",
     "selfClosing": false,
     "props": [
       {
@@ -1132,7 +1613,29 @@
     ]
   },
   {
+    "name": "icon.chart-bar-square",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.chart-pie",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.chat-bubble-bottom-center",
     "selfClosing": false,
     "props": [
       {
@@ -1154,7 +1657,7 @@
     ]
   },
   {
-    "name": "icon.chat-bubble-bottom-center",
+    "name": "icon.chat-bubble-left",
     "selfClosing": false,
     "props": [
       {
@@ -1187,7 +1690,7 @@
     ]
   },
   {
-    "name": "icon.chat-bubble-left",
+    "name": "icon.chat-bubble-oval-left",
     "selfClosing": false,
     "props": [
       {
@@ -1209,7 +1712,7 @@
     ]
   },
   {
-    "name": "icon.chat-bubble-oval-left",
+    "name": "icon.check",
     "selfClosing": false,
     "props": [
       {
@@ -1232,17 +1735,6 @@
   },
   {
     "name": "icon.check-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.check",
     "selfClosing": false,
     "props": [
       {
@@ -1330,17 +1822,6 @@
     ]
   },
   {
-    "name": "icon.chevron-up-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.chevron-up",
     "selfClosing": false,
     "props": [
@@ -1352,7 +1833,40 @@
     ]
   },
   {
+    "name": "icon.chevron-up-down",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.circle-stack",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.clipboard",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.clipboard-document",
     "selfClosing": false,
     "props": [
       {
@@ -1385,29 +1899,18 @@
     ]
   },
   {
-    "name": "icon.clipboard-document",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clipboard",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.clock",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.cloud",
     "selfClosing": false,
     "props": [
       {
@@ -1440,7 +1943,7 @@
     ]
   },
   {
-    "name": "icon.cloud",
+    "name": "icon.code-bracket",
     "selfClosing": false,
     "props": [
       {
@@ -1462,7 +1965,7 @@
     ]
   },
   {
-    "name": "icon.code-bracket",
+    "name": "icon.cog",
     "selfClosing": false,
     "props": [
       {
@@ -1485,17 +1988,6 @@
   },
   {
     "name": "icon.cog-8-tooth",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cog",
     "selfClosing": false,
     "props": [
       {
@@ -1550,7 +2042,7 @@
     ]
   },
   {
-    "name": "icon.cube-transparent",
+    "name": "icon.cube",
     "selfClosing": false,
     "props": [
       {
@@ -1561,7 +2053,7 @@
     ]
   },
   {
-    "name": "icon.cube",
+    "name": "icon.cube-transparent",
     "selfClosing": false,
     "props": [
       {
@@ -1683,6 +2175,17 @@
   },
   {
     "name": "icon.divide",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.document",
     "selfClosing": false,
     "props": [
       {
@@ -1858,7 +2361,7 @@
     ]
   },
   {
-    "name": "icon.document",
+    "name": "icon.ellipsis-horizontal",
     "selfClosing": false,
     "props": [
       {
@@ -1880,17 +2383,6 @@
     ]
   },
   {
-    "name": "icon.ellipsis-horizontal",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.ellipsis-vertical",
     "selfClosing": false,
     "props": [
@@ -1902,7 +2394,7 @@
     ]
   },
   {
-    "name": "icon.envelope-open",
+    "name": "icon.envelope",
     "selfClosing": false,
     "props": [
       {
@@ -1913,7 +2405,7 @@
     ]
   },
   {
-    "name": "icon.envelope",
+    "name": "icon.envelope-open",
     "selfClosing": false,
     "props": [
       {
@@ -1957,6 +2449,17 @@
     ]
   },
   {
+    "name": "icon.eye",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.eye-dropper",
     "selfClosing": false,
     "props": [
@@ -1969,17 +2472,6 @@
   },
   {
     "name": "icon.eye-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.eye",
     "selfClosing": false,
     "props": [
       {
@@ -2056,6 +2548,17 @@
     ]
   },
   {
+    "name": "icon.folder",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.folder-arrow-down",
     "selfClosing": false,
     "props": [
@@ -2100,17 +2603,6 @@
     ]
   },
   {
-    "name": "icon.folder",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.forward",
     "selfClosing": false,
     "props": [
@@ -2144,7 +2636,7 @@
     ]
   },
   {
-    "name": "icon.gift-top",
+    "name": "icon.gift",
     "selfClosing": false,
     "props": [
       {
@@ -2155,7 +2647,7 @@
     ]
   },
   {
-    "name": "icon.gift",
+    "name": "icon.gift-top",
     "selfClosing": false,
     "props": [
       {
@@ -2298,17 +2790,6 @@
     ]
   },
   {
-    "name": "icon.home-modern",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.home",
     "selfClosing": false,
     "props": [
@@ -2320,7 +2801,29 @@
     ]
   },
   {
+    "name": "icon.home-modern",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.identification",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.inbox",
     "selfClosing": false,
     "props": [
       {
@@ -2349,33 +2852,6 @@
         "name": "variant",
         "type": "string",
         "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.inbox",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "icon",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "name",
-        "type": "string",
-        "default": "null"
       }
     ]
   },
@@ -2446,7 +2922,7 @@
     ]
   },
   {
-    "name": "icon.link-slash",
+    "name": "icon.link",
     "selfClosing": false,
     "props": [
       {
@@ -2457,7 +2933,7 @@
     ]
   },
   {
-    "name": "icon.link",
+    "name": "icon.link-slash",
     "selfClosing": false,
     "props": [
       {
@@ -2512,6 +2988,17 @@
     ]
   },
   {
+    "name": "icon.magnifying-glass",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.magnifying-glass-circle",
     "selfClosing": false,
     "props": [
@@ -2545,7 +3032,7 @@
     ]
   },
   {
-    "name": "icon.magnifying-glass",
+    "name": "icon.map",
     "selfClosing": false,
     "props": [
       {
@@ -2557,17 +3044,6 @@
   },
   {
     "name": "icon.map-pin",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.map",
     "selfClosing": false,
     "props": [
       {
@@ -2600,7 +3076,7 @@
     ]
   },
   {
-    "name": "icon.minus-circle",
+    "name": "icon.minus",
     "selfClosing": false,
     "props": [
       {
@@ -2611,7 +3087,7 @@
     ]
   },
   {
-    "name": "icon.minus",
+    "name": "icon.minus-circle",
     "selfClosing": false,
     "props": [
       {
@@ -2710,17 +3186,6 @@
     ]
   },
   {
-    "name": "icon.pause-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.pause",
     "selfClosing": false,
     "props": [
@@ -2732,7 +3197,7 @@
     ]
   },
   {
-    "name": "icon.pencil-square",
+    "name": "icon.pause-circle",
     "selfClosing": false,
     "props": [
       {
@@ -2754,7 +3219,29 @@
     ]
   },
   {
+    "name": "icon.pencil-square",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.percent-badge",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
+    "name": "icon.phone",
     "selfClosing": false,
     "props": [
       {
@@ -2798,7 +3285,7 @@
     ]
   },
   {
-    "name": "icon.phone",
+    "name": "icon.photo",
     "selfClosing": false,
     "props": [
       {
@@ -2809,7 +3296,7 @@
     ]
   },
   {
-    "name": "icon.photo",
+    "name": "icon.play",
     "selfClosing": false,
     "props": [
       {
@@ -2842,7 +3329,7 @@
     ]
   },
   {
-    "name": "icon.play",
+    "name": "icon.plus",
     "selfClosing": false,
     "props": [
       {
@@ -2854,17 +3341,6 @@
   },
   {
     "name": "icon.plus-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.plus",
     "selfClosing": false,
     "props": [
       {
@@ -3062,7 +3538,7 @@
     ]
   },
   {
-    "name": "icon.server-stack",
+    "name": "icon.server",
     "selfClosing": false,
     "props": [
       {
@@ -3073,7 +3549,7 @@
     ]
   },
   {
-    "name": "icon.server",
+    "name": "icon.server-stack",
     "selfClosing": false,
     "props": [
       {
@@ -3139,7 +3615,7 @@
     ]
   },
   {
-    "name": "icon.signal-slash",
+    "name": "icon.signal",
     "selfClosing": false,
     "props": [
       {
@@ -3150,7 +3626,7 @@
     ]
   },
   {
-    "name": "icon.signal",
+    "name": "icon.signal-slash",
     "selfClosing": false,
     "props": [
       {
@@ -3260,7 +3736,7 @@
     ]
   },
   {
-    "name": "icon.stop-circle",
+    "name": "icon.stop",
     "selfClosing": false,
     "props": [
       {
@@ -3271,7 +3747,7 @@
     ]
   },
   {
-    "name": "icon.stop",
+    "name": "icon.stop-circle",
     "selfClosing": false,
     "props": [
       {
@@ -3403,6 +3879,17 @@
     ]
   },
   {
+    "name": "icon.user",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      }
+    ]
+  },
+  {
     "name": "icon.user-circle",
     "selfClosing": false,
     "props": [
@@ -3447,17 +3934,6 @@
     ]
   },
   {
-    "name": "icon.user",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
     "name": "icon.users",
     "selfClosing": false,
     "props": [
@@ -3480,7 +3956,7 @@
     ]
   },
   {
-    "name": "icon.video-camera-slash",
+    "name": "icon.video-camera",
     "selfClosing": false,
     "props": [
       {
@@ -3491,7 +3967,7 @@
     ]
   },
   {
-    "name": "icon.video-camera",
+    "name": "icon.video-camera-slash",
     "selfClosing": false,
     "props": [
       {
@@ -3557,7 +4033,7 @@
     ]
   },
   {
-    "name": "icon.wrench-screwdriver",
+    "name": "icon.wrench",
     "selfClosing": false,
     "props": [
       {
@@ -3568,7 +4044,7 @@
     ]
   },
   {
-    "name": "icon.wrench",
+    "name": "icon.wrench-screwdriver",
     "selfClosing": false,
     "props": [
       {
@@ -3601,7 +4077,171 @@
     ]
   },
   {
-    "name": "menu.checkbox.group",
+    "name": "input",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'outline'"
+      },
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconLeading",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "expandable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "clearable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "copyable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "viewable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'text'"
+      },
+      {
+        "name": "mask",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "as",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "input.clearable",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.copyable",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.expandable",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.group.prefix",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.group.suffix",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "input.viewable",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "label",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "aside",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "legend",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "link",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "external",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "main",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "container",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "menu",
     "selfClosing": false,
     "props": []
   },
@@ -3642,6 +4282,11 @@
     ]
   },
   {
+    "name": "menu.checkbox.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
     "name": "menu.group",
     "selfClosing": false,
     "props": [
@@ -3654,11 +4299,6 @@
   },
   {
     "name": "menu.heading",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "menu",
     "selfClosing": false,
     "props": []
   },
@@ -3692,11 +4332,6 @@
         "default": "null"
       }
     ]
-  },
-  {
-    "name": "menu.radio.group",
-    "selfClosing": false,
-    "props": []
   },
   {
     "name": "menu.radio",
@@ -3735,6 +4370,11 @@
     ]
   },
   {
+    "name": "menu.radio.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
     "name": "menu.separator",
     "selfClosing": false,
     "props": []
@@ -3751,12 +4391,7 @@
     ]
   },
   {
-    "name": "navmenu",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "navmenu.item",
+    "name": "modal",
     "selfClosing": false,
     "props": [
       {
@@ -3765,2501 +4400,12 @@
         "default": "'default'"
       },
       {
-        "name": "disabled",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "indent",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "suffix",
+        "name": "closable",
         "type": "string",
         "default": "null"
       },
       {
-        "name": "value",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "icon",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "navmenu.separator",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "separator",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "orientation",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "vertical",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "faint",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "text",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "tooltip.content",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "tooltip",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "position",
-        "type": "string",
-        "default": "'top'"
-      },
-      {
-        "name": "align",
-        "type": "string",
-        "default": "'center'"
-      },
-      {
-        "name": "content",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "with-tooltip",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "tooltipPosition",
-        "type": "string",
-        "default": "'top'"
-      },
-      {
-        "name": "tooltipKbd",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "tooltip",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "button.group",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "button",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "iconTrailing",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      },
-      {
-        "name": "iconVariant",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "iconLeading",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "default": "'button'"
-      },
-      {
-        "name": "size",
-        "type": "string",
-        "default": "'base'"
-      },
-      {
-        "name": "square",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "inset",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "icon",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "button-or-link",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "type",
-        "type": "string",
-        "default": "'button'"
-      },
-      {
-        "name": "current",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "href",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "dropdown",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "position",
-        "type": "string",
-        "default": "'bottom'"
-      },
-      {
-        "name": "align",
-        "type": "string",
-        "default": "'start'"
-      }
-    ]
-  },
-  {
-    "name": "icon.academic-cap",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.adjustments-horizontal",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.adjustments-vertical",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.archive-box-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.archive-box-x-mark",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.archive-box",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-on-square-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-on-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down-tray",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-left-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-left-end-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-left-start-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-long-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-long-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-long-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-long-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-path-rounded-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-path",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-right-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-right-end-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-right-start-on-rectangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-top-right-on-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-trending-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-trending-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-down-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-down-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-left-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-left-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-right-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-right-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-up-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-turn-up-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-on-square-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-on-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up-tray",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-uturn-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-uturn-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-uturn-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrow-uturn-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrows-pointing-in",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrows-pointing-out",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrows-right-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.arrows-up-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.at-symbol",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.backspace",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.backward",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.banknotes",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-2",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-3-bottom-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-3-bottom-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-3-center-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-3",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-4",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bars-arrow-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.battery-0",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.battery-100",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.battery-50",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.beaker",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bell-alert",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bell-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bell-snooze",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bell",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bold",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bolt-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bolt",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.book-open",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bookmark-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bookmark-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bookmark",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.briefcase",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.bug-ant",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.building-library",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.building-office-2",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.building-office",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.building-storefront",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cake",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.calculator",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.calendar-date-range",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.calendar-days",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.calendar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.camera",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chart-bar-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chart-bar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chart-pie",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-bottom-center-text",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-bottom-center",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-left-ellipsis",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-left-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-oval-left-ellipsis",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chat-bubble-oval-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.check-badge",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.check-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.check",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-double-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-double-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-double-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-double-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-up-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.chevron-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.circle-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clipboard-document-check",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clipboard-document-list",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clipboard-document",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clipboard",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.clock",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cloud-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cloud-arrow-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cloud",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.code-bracket-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.code-bracket",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cog-6-tooth",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cog-8-tooth",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cog",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.command-line",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.computer-desktop",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cpu-chip",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.credit-card",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cube-transparent",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cube",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-bangladeshi",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-dollar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-euro",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-pound",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-rupee",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.currency-yen",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cursor-arrow-rays",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.cursor-arrow-ripple",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.device-phone-mobile",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.device-tablet",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.divide",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-arrow-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-chart-bar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-check",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-bangladeshi",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-dollar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-euro",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-pound",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-rupee",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-currency-yen",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-duplicate",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-magnifying-glass",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-minus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document-text",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.document",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.ellipsis-horizontal-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.ellipsis-horizontal",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.ellipsis-vertical",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.envelope-open",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.envelope",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.equals",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.exclamation-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.exclamation-triangle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.eye-dropper",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.eye-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.eye",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.face-frown",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.face-smile",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.film",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.finger-print",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.fire",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.flag",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.folder-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.folder-minus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.folder-open",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.folder-plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.folder",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.forward",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.funnel",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.gif",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.gift-top",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.gift",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.globe-alt",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.globe-americas",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.globe-asia-australia",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.globe-europe-africa",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.h1",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.h2",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.h3",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.hand-raised",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.hand-thumb-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.hand-thumb-up",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.hashtag",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.heart",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.home-modern",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.home",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.identification",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.inbox-arrow-down",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.inbox-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.inbox",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "icon",
+        "name": "trigger",
         "type": "string",
         "default": "null"
       },
@@ -6271,1252 +4417,68 @@
     ]
   },
   {
-    "name": "icon.information-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.italic",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.key",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.language",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.lifebuoy",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.light-bulb",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.link-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.link",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.list-bullet",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.loading",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.lock-closed",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.lock-open",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.magnifying-glass-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.magnifying-glass-minus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.magnifying-glass-plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.magnifying-glass",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.map-pin",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.map",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.megaphone",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.microphone",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.minus-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.minus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.moon",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.musical-note",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.newspaper",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.no-symbol",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.numbered-list",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.paint-brush",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.paper-airplane",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.paper-clip",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.pause-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.pause",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.pencil-square",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.pencil",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.percent-badge",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.phone-arrow-down-left",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.phone-arrow-up-right",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.phone-x-mark",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.phone",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.photo",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.play-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.play-pause",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.play",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.plus-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.power",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.presentation-chart-bar",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.presentation-chart-line",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.printer",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.puzzle-piece",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.qr-code",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.question-mark-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.queue-list",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.radio",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.receipt-percent",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.receipt-refund",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.rectangle-group",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.rectangle-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.rocket-launch",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.rss",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.scale",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.scissors",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.server-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.server",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.share",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.shield-check",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.shield-exclamation",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.shopping-bag",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.shopping-cart",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.signal-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.signal",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.sparkles",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.speaker-wave",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.speaker-x-mark",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.square-2-stack",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.square-3-stack-3d",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.squares-2x2",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.squares-plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.star",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.stop-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.stop",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.strikethrough",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.sun",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.swatch",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.table-cells",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.tag",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.ticket",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.trash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.trophy",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.truck",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.tv",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.underline",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.user-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.user-group",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.user-minus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.user-plus",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.user",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.users",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.variable",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.video-camera-slash",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.video-camera",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.view-columns",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.viewfinder-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.wallet",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.wifi",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.window",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.wrench-screwdriver",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.wrench",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.x-circle",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "icon.x-mark",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'outline'"
-      }
-    ]
-  },
-  {
-    "name": "menu.checkbox.group",
+    "name": "modal.close",
     "selfClosing": false,
     "props": []
   },
   {
-    "name": "menu.checkbox",
+    "name": "modal.trigger",
     "selfClosing": false,
     "props": [
       {
-        "name": "variant",
-        "type": "string",
-        "default": "'default'"
-      },
-      {
-        "name": "indent",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "suffix",
+        "name": "shortcut",
         "type": "string",
         "default": "null"
       },
       {
-        "name": "label",
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "navbar",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "scrollable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "navbar.item",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "'outline'"
+      },
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconDot",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
         "type": "string",
         "default": "null"
       },
@@ -7524,18 +4486,34 @@
         "name": "icon",
         "type": "string",
         "default": "null"
-      },
+      }
+    ]
+  },
+  {
+    "name": "navlist",
+    "selfClosing": false,
+    "props": [
       {
-        "name": "kbd",
+        "name": "variant",
         "type": "string",
         "default": "null"
       }
     ]
   },
   {
-    "name": "menu.group",
+    "name": "navlist.group",
     "selfClosing": false,
     "props": [
+      {
+        "name": "expandable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "expanded",
+        "type": "boolean",
+        "default": "true"
+      },
       {
         "name": "heading",
         "type": "string",
@@ -7544,31 +4522,31 @@
     ]
   },
   {
-    "name": "menu.heading",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "menu",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "menu.item",
+    "name": "navlist.item",
     "selfClosing": false,
     "props": [
       {
-        "name": "variant",
+        "name": "iconVariant",
         "type": "string",
-        "default": "'default'"
+        "default": "'outline'"
       },
       {
-        "name": "suffix",
+        "name": "iconTrailing",
         "type": "string",
         "default": "null"
       },
       {
-        "name": "value",
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconDot",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
         "type": "string",
         "default": "null"
       },
@@ -7576,68 +4554,6 @@
         "name": "icon",
         "type": "string",
         "default": "null"
-      },
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "menu.radio.group",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "menu.radio",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "variant",
-        "type": "string",
-        "default": "'default'"
-      },
-      {
-        "name": "indent",
-        "type": "boolean",
-        "default": "false"
-      },
-      {
-        "name": "suffix",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "label",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "icon",
-        "type": "string",
-        "default": "null"
-      },
-      {
-        "name": "kbd",
-        "type": "string",
-        "default": "null"
-      }
-    ]
-  },
-  {
-    "name": "menu.separator",
-    "selfClosing": false,
-    "props": []
-  },
-  {
-    "name": "menu.submenu",
-    "selfClosing": false,
-    "props": [
-      {
-        "name": "heading",
-        "type": "string",
-        "default": "''"
       }
     ]
   },
@@ -7693,6 +4609,285 @@
     "props": []
   },
   {
+    "name": "option",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "options",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "searchable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "search",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "pagination",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "paginator",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "profile",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "chevron",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "avatar",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "radio",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
+  },
+  {
+    "name": "radio.group",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
+  },
+  {
+    "name": "row",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "key",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "rows",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "select",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "'default'"
+      },
+      {
+        "name": "multiple",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "search",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "/ Slot forwarding..",
+        "type": "string",
+        "default": null
+      }
+    ]
+  },
+  {
+    "name": "select.button",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "select.empty",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "select.input",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "select.search",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "closable",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "select.variants.combobox",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "searchable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "select.variants.default",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "select.variants.listbox",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "searchable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "search",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "/ Slot forwarding..",
+        "type": "string",
+        "default": null
+      }
+    ]
+  },
+  {
     "name": "separator",
     "selfClosing": false,
     "props": [
@@ -7724,15 +4919,188 @@
     ]
   },
   {
-    "name": "tooltip.content",
+    "name": "sidebar",
     "selfClosing": false,
     "props": [
       {
-        "name": "kbd",
+        "name": "stashable",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sticky",
         "type": "string",
         "default": "null"
       }
     ]
+  },
+  {
+    "name": "sidebar.backdrop",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "sidebar.toggle",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "spacer",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "subheading",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "switch",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      }
+    ]
+  },
+  {
+    "name": "tab",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "iconTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "iconVariant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "tab.group",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "tab.panel",
+    "selfClosing": false,
+    "props": []
+  },
+  {
+    "name": "table",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "paginate",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "selectable",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "table.sortable",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "direction",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "sorted",
+        "type": "boolean",
+        "default": "false"
+      }
+    ]
+  },
+  {
+    "name": "tabs",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "size",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "textarea",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "resize",
+        "type": "string",
+        "default": "'vertical'"
+      },
+      {
+        "name": "invalid",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "rows",
+        "type": "string",
+        "default": "4"
+      }
+    ]
+  },
+  {
+    "name": "toast",
+    "selfClosing": false,
+    "props": []
   },
   {
     "name": "tooltip",
@@ -7755,6 +5123,101 @@
       },
       {
         "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "tooltip.content",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "kbd",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "with-container",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "container",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "with-field",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "descriptionTrailing",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "badge",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "with-inline-field",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "null"
+      }
+    ]
+  },
+  {
+    "name": "with-reversed-inline-field",
+    "selfClosing": false,
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "default": "Value from 'wire:model'"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "default": "null"
+      },
+      {
+        "name": "label",
         "type": "string",
         "default": "null"
       }

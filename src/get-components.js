@@ -100,9 +100,9 @@ console.log(`Scanning Flux directory: ${fluxDirectory}`)
 const files = getFilesRecursively(fluxDirectory + '/stubs/resources/views/flux')
 
 console.log(`Scanning Flux Pro directory: ${fluxProDirectory}`)
-const files2 = getFilesRecursively(fluxDirectory + '/stubs/resources/views/flux')
+const files2 = getFilesRecursively(fluxProDirectory + '/stubs/resources/views/flux')
 
-const allFiles = files.concat(files2)
+const allFiles = files.concat(files2).sort((a, b) => a.name.localeCompare(b.name))
 
 fs.writeFileSync(outputFile, JSON.stringify(allFiles, null, 2))
 
